@@ -6,7 +6,7 @@ const products = [
     id: 1,
     name: 'אגרטל גדול',
     price: 120,
-    image: '/images/large-vase.jpg',
+    image: '/images/large_vase.png',
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ const App: React.FC = () => {
               <h2 className="product-name">{product.name}</h2>
               <p className="product-price">₪{product.price}</p>
               <a
-                href={`https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=your_paypal_email&item_name=${product.name}&amount=${product.price}&currency_code=ILS`}
+                href={`https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=madpis3d@gmail.com&item_name=${product.name}&amount=${product.price}&currency_code=ILS`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="buy-button"
