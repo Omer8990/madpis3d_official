@@ -37,7 +37,7 @@ const products: Product[] = [
     nameEn: 'Apple Watch Stand',
     price: 50,
     description: 'מעמד מינימליסטי ואלגנטי לשעון החכם שלך',
-    image: '/images/apple-watch-stand.jpg',
+    image: '/images/apple_watch_stand.jpg',
     stock: 8
   },
   {
@@ -46,7 +46,7 @@ const products: Product[] = [
     nameEn: 'Cable Organizer',
     price: 30,
     description: 'פתרון חכם לניהול כבלים בשולחן העבודה',
-    image: '/images/cable-organizer.jpg',
+    image: '/images/cable_organizer.jpg',
     stock: 2
   },
 ];
