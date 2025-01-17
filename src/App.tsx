@@ -28,7 +28,7 @@ const products: Product[] = [
     nameEn: 'Small Vase',
     price: 80,
     description: 'אגרטל קומפקטי ומעוצב, אידיאלי לשולחן העבודה או המטבח',
-    image: '/images/small-vase.jpg',
+    image: '/images/small_vase.JPG',
     stock: 3
   },
   {
