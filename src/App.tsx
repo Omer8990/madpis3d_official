@@ -1,35 +1,65 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+const products = [
+  {
+    id: 1,
+    name: 'אגרטל גדול',
+    price: 120,
+    image: '/images/large-vase.jpg',
+  },
+  {
+    id: 2,
+    name: 'אגרטל קטן',
+    price: 80,
+    image: '/images/small-vase.jpg',
+  },
+  {
+    id: 3,
+    name: 'מעמד לשעון אפל',
+    price: 50,
+    image: '/images/apple-watch-stand.jpg',
+  },
+  {
+    id: 4,
+    name: 'מסדר כבלים',
+    price: 30,
+    image: '/images/cable-organizer.jpg',
+  },
+];
 
+const App: React.FC = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="container">
+      <header className="header">
+        <h1>Madpis3D - המדפיס תלת מימד</h1>
+      </header>
 
-export default App
+      <main>
+        <div className="products">
+          {products.map((product) => (
+            <div key={product.id} className="product-card">
+              <img src={product.image} alt={product.name} className="product-image" />
+              <h2 className="product-name">{product.name}</h2>
+              <p className="product-price">₪{product.price}</p>
+              <a
+                href={`https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=your_paypal_email&item_name=${product.name}&amount=${product.price}&currency_code=ILS`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="buy-button"
+              >
+                קנה עכשיו
+              </a>
+            </div>
+          ))}
+        </div>
+      </main>
+
+      <footer className="footer">
+        <p>© 2025 Madpis3D. כל הזכויות שמורות.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default App;
