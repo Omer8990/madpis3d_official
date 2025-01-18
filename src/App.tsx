@@ -33,7 +33,7 @@ const products: Product[] = [
     price: 120,
     description: 'אגרטל מודפס תלת מימד באיכות גבוהה, מושלם לסלון או למרפסת',
     image: '/images/large_vase.png',
-    stock: 5
+    stock: 1
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ const products: Product[] = [
     price: 80,
     description: 'אגרטל קומפקטי ומעוצב, אידיאלי לשולחן העבודה או המטבח',
     image: '/images/small_vase.JPG',
-    stock: 3
+    stock: 2
   },
   {
     id: 3,
@@ -51,7 +51,7 @@ const products: Product[] = [
     price: 50,
     description: 'מעמד מינימליסטי ואלגנטי לשעון החכם שלך',
     image: '/images/apple_watch_stand.jpg',
-    stock: 8
+    stock: 3
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ const products: Product[] = [
     price: 30,
     description: 'פתרון חכם לניהול כבלים בשולחן העבודה',
     image: '/images/cable_organizer.jpg',
-    stock: 2
+    stock: 4
   },
 ];
 
