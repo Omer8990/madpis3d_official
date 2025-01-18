@@ -42,7 +42,7 @@ const products: Product[] = [
     price: 80,
     description: 'אגרטל קומפקטי ומעוצב, אידיאלי לשולחן העבודה או המטבח',
     image: '/images/small_vase.JPG',
-    stock: 2
+    stock: 1
   },
   {
     id: 3,
@@ -153,7 +153,7 @@ const App: React.FC = () => {
       return acc + `${item.name} x${count}, `;
     }, '').slice(0, -2);
 
-        // Create PayPal item description with shipping details
+    // Create PayPal item description with shipping details
     const itemDescription = encodeURIComponent(
       `Order: ${orderDetails}\n` +
       `Shipping to: ${shippingDetails.fullName}\n` +
