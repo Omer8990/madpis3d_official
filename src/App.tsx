@@ -42,7 +42,7 @@ const products: Product[] = [
     price: 80,
     description: 'אגרטל קומפקטי ומעוצב, אידיאלי לשולחן העבודה או המטבח',
     image: '/images/small_vase.JPG',
-    stock: 1
+    stock: 0
   },
   {
     id: 3,
@@ -60,7 +60,7 @@ const products: Product[] = [
     price: 30,
     description: 'פתרון חכם לניהול כבלים בשולחן העבודה',
     image: '/images/cable_organizer.jpg',
-    stock: 4
+    stock: 0
   },
 ];
 
