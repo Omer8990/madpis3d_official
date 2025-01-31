@@ -33,7 +33,7 @@ const products: Product[] = [
     price: 120,
     description: 'אגרטל מודפס תלת מימד באיכות גבוהה, מושלם לסלון או למרפסת',
     image: '/images/large_vase.png',
-    stock: 1
+    stock: 0
   },
   {
     id: 2,
@@ -51,7 +51,7 @@ const products: Product[] = [
     price: 50,
     description: 'מעמד מינימליסטי ואלגנטי לשעון החכם שלך',
     image: '/images/apple_watch_stand.jpg',
-    stock: 3
+    stock: 0
   },
   {
     id: 4,
@@ -63,6 +63,7 @@ const products: Product[] = [
     stock: 0
   },
 ];
+
 
 const StockIndicator: React.FC<{ stock: number }> = ({ stock }) => {
   if (stock === 0) {
